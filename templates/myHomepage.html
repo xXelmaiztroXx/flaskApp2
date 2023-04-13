@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block head %}<!-----------Head------------>
+<title>{{ name }}'s Homepage</title>
+<h1 style="text-align: center;">Hi my name is {{ name }}</h1>
+{% endblock %}<!-----------Head------------>
+
+
+
+{% block body %}<!-----------Body------------>
+
+<h1 class="text">About me:</h1>
+
+<p class="text">I don't really have too much to say about me. </p>
+<p class="text">I guess i'm a regular person who likes to play videogame.</p>
+<p class="text">This is what I have been playing lately:</p>
+
+<div class="smallBox">
+    <h3>Metal Gear Solid 3</h3>
+    <img src='static/Mgs3box.jpg' alt="Image">
+</div>
+
+<div class="smallBox">
+    <h3>Guilty Gear</h3>
+    <img src='static/Guilty_Gear_Strive.jpg' alt="Image">
+</div>
+
+<div class="smallBox">
+    <h3>Resident Evil 4</h3>
+    <img src='static/Resident_Evil_4.jpg' alt="Image">
+</div>
+
+<div class="smallBox">
+    <h3>Xenoblade 3</h3>
+    <img src='static/Xenoblade_3.png' alt="Image">
+</div>
+
+<p class="text"> Why I played this games: </p>
+<div class="text">
+    <a href='/form'> Link to Details </a>
+</div>
+
+{% endblock %}<!-----------Body------------>

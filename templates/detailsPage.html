@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head %}<!-----------Head------------>
+<title>Details</title>
+<h1 style="text-align: center;">About these games...</h1>
+{% endblock %}<!-----------Head------------>
+
+
+
+{% block body %}<!-----------Body------------>
+
+<div class="textBox">
+    {% for content in bigText %}
+        <p class="text2">{{ content }}<p>
+    {% endfor %}
+</div>
+
+<p class="text"> Go Back: </p>
+<div class="text">
+    <a href='/'> Back </a>
+</div>
+
+{% endblock %}<!-----------Body------------>
